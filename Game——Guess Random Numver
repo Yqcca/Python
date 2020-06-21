@@ -1,0 +1,18 @@
+import random
+num = random.randint(1, 10)
+print('A game about guessing starts now')
+time = 0
+while time < 3:
+    x = int(input('Guess a number from 1 to 10:\n'))
+    if x == num:
+        print('That is true')
+        break
+    elif x < num:
+        print('Your number is too small')
+    else:
+        print('Your number is too big')
+    time = time+1
+if time < 3:
+    print('You are a genius!')
+else:
+    print('Start again!')
