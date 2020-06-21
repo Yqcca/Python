@@ -1,7 +1,9 @@
 import random
+#Set a random number 
 num = random.randint(1, 10)
 print('A game about guessing starts now')
 time = 0
+#Set the times for guessing
 while time < 3:
     x = int(input('Guess a number from 1 to 10:\n'))
     if x == num:
