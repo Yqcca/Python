@@ -1,0 +1,37 @@
+def surfacearea(length, width, height):
+    return 2 * (length * width + length * height + height * width)
+
+
+def surfacearea(length, width, height):
+    return 2 * (length * width + length * height + height * width)
+
+
+def volume(length, width, height):
+    return width * length * height
+
+
+def volume(length, width, height):
+    return width * length * height
+
+
+print('Welcome to the calculation system for cuboid!')
+print('Hello! This is a system about calculations for cuboid.')
+print('Input 1 to calculate the surface area\ninput 2 to calculate the volume. Leave the blank to quit the system.')
+num = input('Please choose a system:(Blank to quit)\n')
+
+if num == '':
+    print('Thanks!')
+
+elif num == '1':
+    print('Calculate the surface area (unit as cm)')
+    length = int(input('Put the length:\n'))
+    width = int(input('Put the width:\n'))
+    height = int(input('Put the height:\n'))
+    print(surfacearea(width, length, height))
+
+elif num == '2':
+    print('Calculate the Volume (unit as cm)')
+    length = int(input('Put the length:\n'))
+    width = int(input('Put the width:\n'))
+    height = int(input('Put the height:\n'))
+    print(volume(length, width, height))
